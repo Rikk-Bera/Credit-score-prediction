@@ -39,7 +39,7 @@ The goal is to assign a **credit score** to crypto wallets by analyzing:
      Weighted Rule-Based Credit Score Calculation
                        ↓
      → Credit Score CSV Output (wallet_credit_scores.csv)
-     → Train & Save ML Model (credit_score_model.pkl)
+     → Train & Save ML Model (credit_score_checker.pkl)
 ````
 
 ---
@@ -81,13 +81,13 @@ The final score is scaled to a **0–1000** range using another `MinMaxScaler`.
 
 ### 6. **Machine Learning Model**
 
-A `RandomForestRegressor` is trained on the features with the calculated score as a synthetic target. The model is saved as `credit_score_model.pkl` for further use or API deployment.
+A `RandomForestRegressor` is trained on the features with the calculated score as a synthetic target. The model is saved as `credit_score_checker.pkl` for further use or API deployment.
 
 ---
 
 ## Output Files
 
-* `credit_score_model.pkl`: Trained model file (useful for inference on new wallets)
+* `credit_score_checker.pkl`: Trained model file (useful for inference on new wallets)
 
 ---
 
