@@ -124,7 +124,7 @@ Place `user-wallet-transactions.json` inside a `zeru/` folder.
 ### 4. Run the script
 
 ```bash
-python credit_score_model.py
+python credit_score_predictor.py
 ```
 
 ---
